@@ -1,0 +1,6 @@
+TO-DO list over weekend
+
+- Find data sources
+- Read/watch/learn neural networks
+- Research similar projects
+- Develop strategy for next week
