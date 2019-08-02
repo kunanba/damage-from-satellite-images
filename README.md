@@ -36,13 +36,13 @@ The repository includes:
 
 
 ### Requirements
-- Python 3.x
-- skimage
-- skilearn
+- Python 
+- scikit-image
+- scikit-learn
 - pandas
 - numpy
 - matplotlib
-- cv2
+- OpenCV
 - glob
 - os
 - keras
