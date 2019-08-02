@@ -67,7 +67,7 @@ This project seeks to distinguish affected disaster areas from satellite images 
 5. Lastly we have to create the contours in order to outline the buildings on the images before disaster and after disaster, and essentially detect the building and as the end result calculate the difference between undamaged building and damaged building or area
 
 
-      In order to streamline the image comparison process it is essential to define functions [click here](../code/disaster_images_processing.ipynb) to see the notebook containing these functions. Using the functions we can read in the images, display them using Matplotlib, covert to grayscale and threshold images. Moreover, one can determine absolute difference between the images and calculate the SSIM score, in order to determine how those images differ. The commented out section in functions explain what function does and what it returns, as well as what the inputs are.
+      In order to streamline the image comparison process it is essential to define functions [click here](../code/Disaster_images_processing.ipynb) to see the notebook containing these functions. Using the functions we can read in the images, display them using Matplotlib, covert to grayscale and threshold images. Moreover, one can determine absolute difference between the images and calculate the SSIM score, in order to determine how those images differ. The commented out section in functions explain what function does and what it returns, as well as what the inputs are.
       Also in the same notebook you can see how before and after disaster images compare to each other, these include Hurricane Harvey, Hurricane Michael, Tornado Joplin and Widlfire California.
       
       
