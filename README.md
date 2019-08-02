@@ -94,13 +94,13 @@ Each notebook that has the structure `010_<notebook_name>` is an attempt at a mo
 > - SVM, SGDClassifier, and the more manual method are quicker to implement, and much less computationally taxing, however the tradeoff is their complexity limitations.
 
 #### Future of this section:
- [ ] Restructure the order of creating HOG and finding bounding box points.
- [ ] Find out how to create (accurate) binary masks from original images.
- [ ] Use binary masks to find contours and corners.
- [ ] Annotate, and programatically annotate, the binary masks.
- [ ] Pass the coordinates and annotations to train a basic model.
- [ ] Use the model to detect buildings, and find the SSIM score of the boxed regions.
- [ ] Use the trained network to more accurately identify buildings and create binary masks from them in order to annotate them and improve the model upon itself.
+ - Restructure the order of creating HOG and finding bounding box points.
+ - Find out how to create (accurate) binary masks from original images.
+ - Use binary masks to find contours and corners.
+ - Annotate, and programatically annotate, the binary masks.
+ - Pass the coordinates and annotations to train a basic model.
+ - Use the model to detect buildings, and find the SSIM score of the boxed regions.
+ - Use the trained network to more accurately identify buildings and create binary masks from them in order to annotate them and improve the model upon itself.
  
  
 
