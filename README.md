@@ -39,7 +39,7 @@ This project seeks to distinguish affected disaster areas from satellite images 
 ### Image Selection
 
 
-       Image selection was a manual process and consisted of searching for images, modifying them, and evaluating them. The goal was to find satellite images before and after a natural disaster. For our purposes satellite images provide the best view for damage assessement. The challenge with satellite images made available to the public is they don't have specific date range filters to search on related to natural disasters. We resorted to taking snapshots of images that were made available to the public via news channels as well as google images. They were then saved in Jpeg format for image preprocessing and then resized using OpenCV image visualization library. We used the structural Similarity Index(SSIM) score to compare before and after satellite images. These scores are a measure on a range from (0,1) for structural similarity, with 0, having no structural similarity and 1, having complete structural similarity.
+   Image selection was a manual process and consisted of searching for images, modifying them, and evaluating them. The goal was to find satellite images before and after a natural disaster. For our purposes satellite images provide the best view for damage assessement. The challenge with satellite images made available to the public is they don't have specific date range filters to search on related to natural disasters. We resorted to taking snapshots of images that were made available to the public via news channels as well as google images. They were then saved in Jpeg format for image preprocessing and then resized using OpenCV image visualization library. We used the structural Similarity Index(SSIM) score to compare before and after satellite images. These scores are a measure on a range from (0,1) for structural similarity, with 0, having no structural similarity and 1, having complete structural similarity.
 
 
 
@@ -76,9 +76,8 @@ This project seeks to distinguish affected disaster areas from satellite images 
 
 
 
-### Object Detection
---
-#### Training a Network
+### Object Detection: Training a Network
+
 
 This section consists of different methods to accomplish the same classification goal.  All of our models are trying to classify what is a building and what is background.
 All of the images for this section are located in the `images/training/` folder, along with a script to create the positive and negative images from the originals and binary mask.
