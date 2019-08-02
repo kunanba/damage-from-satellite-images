@@ -2,7 +2,7 @@
 
 ### Project Overview
 
-During a disaster the immediate needs are the search and rescue of survivors.  Immediately following a disaster, assessing the level of damage caused and the area that has been affected is critical to timely distribution of much needed resources.
+During a disaster the immediate needs are the search and rescue of survivors.  Following a disaster, assessing the level of damage caused and the area that has been affected is critical to timely distribution of needed resources.
 
 This project seeks to distinguish affected disaster areas from satellite images using image selection, transformation and object detection.
 
@@ -17,18 +17,6 @@ This project seeks to distinguish affected disaster areas from satellite images 
 - [Drannen Love](https://www.linkedin.com/in/drannenlove/) 
 
 - [Tricia Wells](https://www.linkedin.com/in/triciawells731/)
-
-
-### The Work
-
-The repository includes:
-
-- Source code of Mask R-CNN built on FPN and ResNet101.
-- Training code for MS COCO
-- Pre-trained weights for MS COCO
-- Jupyter notebooks to crop images and visualize image comparisons
-- ParallelModel class for multi-GPU training
-
 
 
 ### Requirements
@@ -49,7 +37,9 @@ The repository includes:
 
 
 ### Image Selection
-Image selection was a manual process and consisted of searching for images, modifying them, and evaluating them. The goal was to find satellite images before and after a natural disaster. For our purposes satellite images provide the best view for damage assessement. The challenge with satellite images made available to the public is they don't have specific date range filters to search on related to natural disasters. We resorted to taking snapshots of images that were made available to the public via news channels as well as google images. They were then saved in Jpeg format for image preprocessing and then resized using OpenCV image visualization library. We used the structural Similarity Index(SSIM) score to compare before and after satellite images. These score are measure on a range from (0,1) for structural similarity.0, having no structural similarity and 1, having complete structural similarity.
+
+
+       Image selection was a manual process and consisted of searching for images, modifying them, and evaluating them. The goal was to find satellite images before and after a natural disaster. For our purposes satellite images provide the best view for damage assessement. The challenge with satellite images made available to the public is they don't have specific date range filters to search on related to natural disasters. We resorted to taking snapshots of images that were made available to the public via news channels as well as google images. They were then saved in Jpeg format for image preprocessing and then resized using OpenCV image visualization library. We used the structural Similarity Index(SSIM) score to compare before and after satellite images. These scores are a measure on a range from (0,1) for structural similarity, with 0, having no structural similarity and 1, having complete structural similarity.
 
 
 
@@ -115,9 +105,3 @@ Each notebook that has the structure `010_<notebook_name>` is an attempt at a mo
  
  
 
-### Next Steps
-- Access to additional images from satellite sources
-- Automation of image capture, scoring, and selection
-- Incorporating Object detection before contouring
-- Training a neural network to detect bounding boxes
-- Annotation of images
