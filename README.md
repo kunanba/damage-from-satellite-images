@@ -92,8 +92,33 @@ Image selection was a manual process and consisted of searching for images, modi
 
 
 ### Object Detection
+--
+#### Training a Network
 
+This section consists of different methods to accomplish the same classification goal.  All of our models are trying to classify what is a building and what is background.
+All of the images for this section are located in the `images/training/` folder, along with a script to create the positive and negative images from the originals and binary mask.
+- Upon further review, this seems to be a useless step and is not the proper way to accomplish this task.
+- Using Histogram of Gradients (HOG) supplies the 'hot spots' to build the bounding boxes / contours, but this has not been fully accomplished at this point.
 
+Each notebook that has the structure `010_<notebook_name>` is an attempt at a model to classify the buildings.
+
+> *The main points of this section are as follows:*
+> - Classifying, segmenting, creating bounding boxes, annotating, and training on images from scratch is **hard!**
+> - This section was a great lesson on research and working around current solutions and adapting others to fit our needs.
+> - Further work or restructuring of this section is needed to get the segmentation of the buildings correct.
+> - Convolutional Neural Network(s) (CNN) are the way to go for the future, because of their ability to detect higher order and more complex features, based on the structure of the network.
+> - SVM, SGDClassifier, and the more manual method are quicker to implement, and much less computationally taxing, however the tradeoff is their complexity limitations.
+
+#### Future of this section:
+ [ ] Restructure the order of creating HOG and finding bounding box points.
+ [ ] Find out how to create (accurate) binary masks from original images.
+ [ ] Use binary masks to find contours and corners.
+ [ ] Annotate, and programatically annotate, the binary masks.
+ [ ] Pass the coordinates and annotations to train a basic model.
+ [ ] Use the model to detect buildings, and find the SSIM score of the boxed regions.
+ [ ] Use the trained network to more accurately identify buildings and create binary masks from them in order to annotate them and improve the model upon itself.
+ 
+ 
 
 ### Next Steps
 - Access to additional images from satellite sources
