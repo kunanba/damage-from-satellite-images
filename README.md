@@ -14,13 +14,21 @@ During the recovery phase immediately following a disaster, FEMA performs damage
 
 ### Team
 
+<<<<<<< HEAD
 - [Chris Birch](linkedin link?)
+=======
+- [Chris Birch](https://www.linkedin.com/in/chris-birch/) 
+>>>>>>> b5305101b7447431dd9a09b0f9a980aa021e656a
 
-- [Angela Kunanbaeva](https://newlighttechnologies.com/staff/ran-goldblatt/)
+- [Angela Kunanbaeva](https://www.linkedin.com/in/aqqu/)
 
+<<<<<<< HEAD
 - [Drannon Love](https://newlighttechnologies.com/)
+=======
+- [Drannen Love](https://www.linkedin.com/in/drannenlove/) 
+>>>>>>> b5305101b7447431dd9a09b0f9a980aa021e656a
 
-- [Tricia Wells](https://newlighttechnologies.com/staff/ran-goldblatt/)
+- [Tricia Wells](https://www.linkedin.com/in/triciawells731/)
 
 
 ### The Work
@@ -30,13 +38,25 @@ The repository includes:
 - Source code of Mask R-CNN built on FPN and ResNet101.
 - Training code for MS COCO
 - Pre-trained weights for MS COCO
-- Jupyter notebooks to visualize the detection pipeline at every step
+- Jupyter notebooks to crop the image and visualize the image comparison
 - ParallelModel class for multi-GPU training
 
 
 
 ### Requirements
- - A short description of software requirements (e.g., `Pandas`, `Scikit-learn`) required by your analysis.
+- Python 
+- scikit-image
+- scikit-learn
+- pandas
+- numpy
+- matplotlib
+- OpenCV
+- glob
+- os
+- keras
+- plaidml
+- imutils
+- PIL
 
 
 
@@ -51,3 +71,13 @@ the image selection was a manual process and consisted of searching for images, 
 
 
 ### Object Detection
+<<<<<<< HEAD
+=======
+
+### Next Steps
+- Access to additional images from satellite sources
+- Automation of image capture, scoring, and selection
+- Incorporating Object detection before contouring
+- Training a neural network to detect bounding boxes
+- Annotation of images
+>>>>>>> b5305101b7447431dd9a09b0f9a980aa021e656a
