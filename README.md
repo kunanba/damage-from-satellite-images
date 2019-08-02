@@ -2,14 +2,9 @@
 
 ### Project Overview
 
-We've organized for you to complete a client project. This is a great opportunity for you to be exposed to a **real organization** doing **real work** with **real data**.
+During a disaster the immediate needs are the search and rescue of survivors.  Immediately following a disaster, assessing the level of damage caused and the area that has been affected is critical to timely distribution of much needed resources.
 
-
-
-During the recovery phase immediately following a disaster, FEMA performs damage assessment “on the ground” to assess the level of damage caused to residential parcels and to critical infrastructure. To assure an accurate estimation of the damage, it is important to understand the condition of the structures prior to the event. To help and guide the damage assessment efforts following a disaster, and to assist the surveyors in identification of the structures of interest, SightVisit. It will retrieve screen shots of the structures from Google Street View. A damage assessment form, which, in addition to relevant information
-
-
-
+This project seeks to distinguish affected disaster areas from satellite images using image selection, transformation and object detection.
 
 
 ### Team
