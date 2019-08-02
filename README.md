@@ -68,6 +68,34 @@ the image selection was a manual process and consisted of searching for images, 
 
 ### Image Transformation
 
+       
+   In order for the images to be processed via machine learning algorithms not only do they have to be converted into matrices of numbers but also it is essential to scale them. This is really important since we have to compare the images in pairs, and they have to be the same size. Most of our images were collected manually using computer screenshots and thus they come in bunch of different size. Scaling/resizing scales the images to a certain size, but the difference in scale will remain. It is better to crop this kind of images, but in order to keep majority of information the cropping should be in accordance with the image size. To see the code how the resizing is performed and the files are written [click here](./cropping_images.ipynb) to go to *Cropping Images Notebook*. The SSIM score is also calculated in the notebook above.
+    
+    
+   The next part is to actually transform images so we can compare the differences in the images, and apply techniques that will enable us to create the contours for object detection purposes, and essentially help us asses the damaged areas of the buildings or areas.
+       
+       
+   The worklfow for two images comparison usually follows the steps below, and two libraries required for this OpenCV and scikit-image. 
+    
+
+1. Reading in the images using OpenCV
+
+2. The images should be grayscaled first for further image processing techniques
+
+3. It is important to threshold the images in order to binarize the images into black and white output. This essentially creates a mask where further computer vision algorithms can detect the significant parts of the image and ingore the insignificant parts. In our case the black will be ignored and the white should be considered significant
+
+4. Another method to create mask is edge detection, which can also be used as a mask.
+
+5. Lastly we have to create the contours in order to outline the buildings on the images before disaster and after disaster, and essentially detect the building and as the end result calculate the difference between undamaged building and damaged building or area
+
+
+      In order to streamline the image comparison process it is essential to define functions [click here](./disaster_images_processing.ipynb) to see the notebook containing these functions. Using the functions we can read in the images, display them using Matplotlib, covert to grayscale and threshold images. Moreover, one can determine absolute difference between the images and calculate the SSIM score, in order to determine how those images differ. The commented out section in functions explain what function does and what it returns, as well as what the inputs are.
+      Also in the same notebook you can see how before and after disaster images compare to each other, these include Hurricane Harvey, Hurricane Michael, Tornado Joplin and Widlfire California.
+      
+      
+      After the inital processing part the object detection algorithm is required to determine where the buildings are, and calculate the SSIM scores on how they differ, so that initial damage assesment can be determined.
+
+
 
 
 ### Object Detection
