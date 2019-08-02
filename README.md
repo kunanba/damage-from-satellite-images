@@ -14,13 +14,13 @@ During the recovery phase immediately following a disaster, FEMA performs damage
  
 ### Team
 
-- [Chris Birch](linkedin link?) 
+- [Chris Birch](https://www.linkedin.com/in/chris-birch/) 
 
-- [Angela Kunanbaeva](https://newlighttechnologies.com/staff/ran-goldblatt/)
+- [Angela Kunanbaeva](https://www.linkedin.com/in/aqqu/)
 
-- [Drannon Love](https://newlighttechnologies.com/) 
+- [Drannen Love](https://www.linkedin.com/in/drannenlove/) 
 
-- [Tricia Wells](https://newlighttechnologies.com/staff/ran-goldblatt/)
+- [Tricia Wells](https://www.linkedin.com/in/triciawells731/)
 
 
 ### The Work
@@ -36,7 +36,19 @@ The repository includes:
 
 
 ### Requirements
- - A short description of software requirements (e.g., `Pandas`, `Scikit-learn`) required by your analysis.
+- Python 3.x
+- skimage
+- skilearn
+- pandas
+- numpy
+- matplotlib
+- cv2
+- glob
+- os
+- keras
+- plaidml
+- imutils
+- PIL
 
 
 
@@ -51,3 +63,9 @@ The repository includes:
 
 ### Object Detection
 
+### Next Steps
+- Access to additional images from satellite sources
+- Automation of image capture, scoring, and selection
+- Incorporating Object detection before contouring
+- Training a neural network to detect bounding boxes
+- Annotation of images
